@@ -23,6 +23,14 @@ export const routes: Routes = [
       {
         path: 'dashboard',
         loadChildren: './views/dashboard/dashboard.module#DashboardModule'
+      },
+      {
+        path: 'operation-monitoring',
+        loadChildren: './views/operation-monitoring/operation-monitoring.module#OperationMonitoringModule'
+      },
+      {
+        path: 'purchase-requisition',
+        loadChildren: './views/purchase-requisition/purchase-requisition.module#PurchaseRequisitionModule'
       }
     ]
   }
