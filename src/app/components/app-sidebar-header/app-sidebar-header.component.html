@@ -1,6 +1,6 @@
 <div class="sidebar-header">
-    <img src="http://www.saparch.com/public/widget/1_widget_john-doe.png" 
+    <img [src]="profile.photoPath" 
     class="profile__photo" />
-    <p class="profile__name">Adrian D. Pantulu</p>
-    <p class="profile__title">Delivery Manager SR2</p>
+    <p class="profile__name">{{profile.name}}</p>
+    <p class="profile__title">{{profile.title}}</p>
 </div>
