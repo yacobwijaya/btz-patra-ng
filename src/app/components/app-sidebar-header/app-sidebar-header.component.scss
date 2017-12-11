@@ -1,0 +1,17 @@
+$profile-photo-size: 72px;
+
+.profile__photo {
+    width: $profile-photo-size;
+    height: $profile-photo-size;
+    object-fit: cover;
+    border-radius: $profile-photo-size / 2;
+}
+.profile__name {
+    margin: 16px 0 0 0;
+    padding: 0;
+    font-weight: bold;
+}
+.profile__title {
+    margin: 0;
+    padding: 0;
+}
