@@ -42,6 +42,17 @@ const APP_COMPONENTS = [
   APP_SIDEBAR_NAV
 ]
 
+// @yacob: Import Halcyon Components
+import {
+  HcSapIndicatorComponent,
+  HcNavbarDateComponent
+} from './hc-components';
+
+const HC_COMPONENTS = [
+  HcSapIndicatorComponent,
+  HcNavbarDateComponent
+]
+
 // Import directives
 import {
   AsideToggleDirective,
@@ -77,7 +88,8 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
     AppComponent,
     ...APP_CONTAINERS,
     ...APP_COMPONENTS,
-    ...APP_DIRECTIVES
+    ...APP_DIRECTIVES,
+    ...HC_COMPONENTS
   ],
   providers: [{
     provide: LocationStrategy,

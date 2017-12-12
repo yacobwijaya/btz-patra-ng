@@ -1,0 +1,1 @@
+export * from './hc-sap-indicator.component';

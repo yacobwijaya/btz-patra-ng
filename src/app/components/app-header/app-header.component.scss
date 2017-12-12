@@ -1,0 +1,12 @@
+// Additional style for app-header.
+
+$distance: 1.25rem;
+
+.navbar-right {
+    display: inline-block;
+    align-items: center;
+
+    * {
+        margin-right: $distance;
+    }
+}
