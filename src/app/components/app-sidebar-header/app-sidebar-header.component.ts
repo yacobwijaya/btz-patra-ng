@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 
 export class AppSidebarHeaderComponent {
   public profile: Profile = {
-    photoPath: 'http://www.saparch.com/public/widget/1_widget_john-doe.png';
+    photoPath: 'http://www.saparch.com/public/widget/1_widget_john-doe.png',
     name: 'Adrian D. Pantulu',
     title: 'Delivery Manager SR2'
   }

@@ -19,8 +19,8 @@ export const navigation = [
     icon: 'fa fa-cart-arrow-down'
   },
   {
-    name: 'Purchase Order',
-    url: '/purchase-order',
+    name: 'PO STO',
+    url: '/po-sto',
     icon: 'fa fa-cart-plus'
   },
   {

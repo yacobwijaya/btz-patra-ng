@@ -31,6 +31,10 @@ export const routes: Routes = [
       {
         path: 'purchase-requisition',
         loadChildren: './views/purchase-requisition/purchase-requisition.module#PurchaseRequisitionModule'
+      },
+      {
+        path: 'po-sto',
+        loadChildren: './views/po-sto/po-sto.module#PoStoModule'
       }
     ]
   }
