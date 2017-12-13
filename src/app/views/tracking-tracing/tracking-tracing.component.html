@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+      <!-- Card: Tracking and tracing -->
+      <div class="col-sm-12">
+        <div class="card">
+          <p class="card-header">Tracking and Tracing</p>
+          <div class="card-body">
+            <div class="row">
+              <!-- Table -->
+              <div class="col-sm-12">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead class="thead-default">
+                      <tr>
+                        <th>Date</th>
+                        <th>Activity</th>
+                        <th>Loc</th>
+                        <th>Volume (L)</th>
+                        <th>Status</th>
+                        <th>PIC</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let object of objects">
+                        <td>{{object.date | date: 'dd-MMMM-yyyy'}}</td>
+                        <td>{{object.activity}}</td>
+                        <td>{{object.location}}</td>
+                        <td>{{object.volume}}</td>
+                        <td>{{object.status}}</td>
+                        <td>{{object.pic}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

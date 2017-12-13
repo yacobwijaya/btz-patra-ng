@@ -11,6 +11,8 @@ import { OperationMonitoringRoutingModule } from './operation-monitoring-routing
     OperationMonitoringRoutingModule,
     ChartsModule
   ],
-  declarations: [ OperationMonitoringComponent ]
+  declarations: [ 
+    OperationMonitoringComponent 
+  ]
 })
 export class OperationMonitoringModule { }

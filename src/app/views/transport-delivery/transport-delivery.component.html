@@ -1,0 +1,170 @@
+<div class="container">
+    <div class="row">
+      <!-- Card: Transport & Delivery -->
+      <div class="col-sm-12">
+        <div class="card">
+          <p class="card-header">Transport and Delivery</p>
+          <div class="card-body">
+            <div class="row">
+              <!-- Table -->
+              <div class="col-sm-12">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead class="thead-default">
+                      <tr>
+                        <th>PO No.</th>
+                        <th>Moda</th>
+                        <th>Vendor</th>
+                        <th>Volume (L)</th>
+                        <th>Status</th>
+                        <th>SLA</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let object of objects">
+                        <td>{{object.poNo}}</td>
+                        <td>{{object.moda}}</td>
+                        <td>{{object.vendor}}</td>
+                        <td>{{object.volume}}</td>
+                        <td>{{object.status}}</td>
+                        <td>{{object.sla}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card: Detail -->
+      <div class="col-sm-9">
+        <div class="card">
+          <p class="card-header">Detail</p>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-6">
+                <ngui-map center="Jakarta, Indonesia"></ngui-map>
+              </div>
+              <div class="col-sm-6">
+                <form>
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">Vehichle</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control-plaintext" value="{{transport.vehicle}}" readonly>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">Driver</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control-plaintext" value="{{transport.driver}}" readonly>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">Load</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control-plaintext" value="{{transport.load}}" readonly>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">Origin</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control-plaintext" value="{{transport.origin}}" readonly>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">Destination</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control-plaintext" value="{{transport.destination}}" readonly>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-form-label">ETA</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control-plaintext" value="{{transport.eta}}" readonly>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-sm-4 col-form-label">Vendor</label>
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control-plaintext" value="{{transport.vendor}}" readonly>
+                      </div>
+                    </div>
+                </form>
+                <div class="row">
+                  <div class="col-sm-6 text-center">
+                      <img [src]="transport.photoPath" class="driver__photo" />
+                  </div>
+                  <div class="col-sm-6 text-center">
+                    QR Code here
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <p class="card-header">Good On Delivery</p>
+          <div class="card-body">
+            <div class="card">
+              <div class="card-block">
+                  <div class="h4 mb-0">100%</div>
+                  <small class="text-muted text-uppercase font-weight-bold">Kertapati</small>
+                  <div class="progress progress-xs mt-1 mb-0">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-block">
+                <div class="h4 mb-0">100%</div>
+                <small class="text-muted text-uppercase font-weight-bold">Jambi</small>
+                <div class="progress progress-xs mt-1 mb-0">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-block">
+                <div class="h4 mb-0">100%</div>
+                <small class="text-muted text-uppercase font-weight-bold">Lampung</small>
+                <div class="progress progress-xs mt-1 mb-0">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-block">
+                <div class="h4 mb-0">100%</div>
+                <small class="text-muted text-uppercase font-weight-bold">Bengkulu</small>
+                <div class="progress progress-xs mt-1 mb-0">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-block">
+                <div class="h4 mb-0">100%</div>
+                <small class="text-muted text-uppercase font-weight-bold">Bangka</small>
+                <div class="progress progress-xs mt-1 mb-0">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-block">
+                <div class="h4 mb-0">100%</div>
+                <small class="text-muted text-uppercase font-weight-bold">Plumpang</small>
+                <div class="progress progress-xs mt-1 mb-0">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

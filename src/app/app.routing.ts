@@ -35,6 +35,26 @@ export const routes: Routes = [
       {
         path: 'po-sto',
         loadChildren: './views/po-sto/po-sto.module#PoStoModule'
+      },
+      {
+        path: 'good-receive',
+        loadChildren: './views/good-receive/good-receive.module#GoodReceiveModule'
+      },
+      {
+        path: 'good-issue',
+        loadChildren: './views/good-issue/good-issue.module#GoodIssueModule'
+      },
+      {
+        path: 'transport-delivery',
+        loadChildren: './views/transport-delivery/transport-delivery.module#TransportDeliveryModule'
+      },
+      {
+        path: 'tracking-tracing',
+        loadChildren: './views/tracking-tracing/tracking-tracing.module#TrackingTracingModule'
+      },
+      {
+        path: 'sap-interfacing',
+        loadChildren: './views/sap-interfacing/sap-interfacing.module#SapInterfacingModule'
       }
     ]
   }

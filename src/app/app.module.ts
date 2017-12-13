@@ -75,6 +75,7 @@ import { AppRoutingModule } from './app.routing';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
+import { NguiMapModule } from '@ngui/map';
 
 @NgModule({
   imports: [
@@ -82,7 +83,8 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
     AppRoutingModule,
     BsDropdownModule.forRoot(),
     TabsModule.forRoot(),
-    ChartsModule
+    ChartsModule,
+    NguiMapModule.forRoot({apiUrl: 'https://maps.google.com/maps/api/js?key=AIzaSyCxmc_80eI6nR3xMA7XokZAyLoCQJf7uwk'})
   ],
   declarations: [
     AppComponent,

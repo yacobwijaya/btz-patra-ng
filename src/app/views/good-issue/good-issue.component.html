@@ -1,0 +1,153 @@
+<div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card">
+          <p class="card-header">Good Issue</p>
+          <div class="card-body">
+            <div class="row">
+              <!-- Table -->
+              <div class="col-sm-12">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead class="thead-default">
+                      <tr>
+                        <th>PR.No</th>
+                        <th>PO.No</th>
+                        <th>PO.STO</th>
+                        <th>GI</th>
+                        <th>GR</th>
+                        <th>UoM</th>
+                        <th>Status</th>
+                        <th>PIC</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let object of objects">
+                        <td>{{object.prNo}}</td>
+                        <td>{{object.poNo}}</td>
+                        <td>{{object.poSto}}</td>
+                        <td>{{object.gi}}</td>
+                        <td>{{object.gr}}</td>
+                        <td>{{object.uom}}</td>
+                        <td>{{object.status}}</td>
+                        <td>{{object.pic}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- Bar Chart: GI Execution by Volume -->
+              <div class="col-sm-6">
+                <h6>GI Execution by Volume</h6>
+                <div style="display: block">
+                    <canvas baseChart
+                    [datasets]="barChartData"
+                    [labels]="barChartLabels"
+                    [options]="barChartOptions"
+                    [legend]="barChartLegend"
+                    [chartType]="barChartType"
+                    (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)"></canvas>
+                </div>
+              </div>
+              <!-- Donut Chart: GI Execution by Status -->
+              <div class="col-sm-6">
+                <h6>GI Execution by Status</h6>
+                <div style="display: block">
+                    <canvas baseChart
+                                [data]="doughnutChartData"
+                                [labels]="doughnutChartLabels"
+                                [chartType]="doughnutChartType"
+                                [options]="doughnutChartOptions"
+                                (chartHover)="chartHovered($event)"
+                                (chartClick)="chartClicked($event)"></canvas>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 text-center">
+                        <p>Total PR</p>
+                        <h4>41.4 kL</h4>
+                    </div>
+                    <div class="col-sm-6 text-center">
+                        <p>Equal</p>
+                        <h4>2,070 boxes</h4>
+                    </div>
+                </div> 
+              </div>
+              <!-- GI Execution per DSP -->
+              <div class="col-sm-12">
+                <h6>GI Execution per DSP</h6>
+                <div class="row">
+                  <div class="col-sm-2">
+                    <div class="card">
+                      <div class="card-block">
+                        <div class="h4 mb-0">52%</div>
+                        <small class="text-muted text-uppercase font-weight-bold">Kertapati</small>
+                        <div class="progress progress-xs mt-1 mb-0">
+                          <div class="progress-bar bg-warning" role="progressbar" style="width: 52%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="card">
+                      <div class="card-block">
+                        <div class="h4 mb-0">100%</div>
+                        <small class="text-muted text-uppercase font-weight-bold">Jambi</small>
+                        <div class="progress progress-xs mt-1 mb-0">
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="card">
+                      <div class="card-block">
+                        <div class="h4 mb-0">52%</div>
+                        <small class="text-muted text-uppercase font-weight-bold">Bengkulu</small>
+                        <div class="progress progress-xs mt-1 mb-0">
+                          <div class="progress-bar bg-warning" role="progressbar" style="width: 52%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="card">
+                      <div class="card-block">
+                        <div class="h4 mb-0">52%</div>
+                        <small class="text-muted text-uppercase font-weight-bold">Lampung</small>
+                        <div class="progress progress-xs mt-1 mb-0">
+                          <div class="progress-bar bg-warning" role="progressbar" style="width: 52%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="card">
+                      <div class="card-block">
+                        <div class="h4 mb-0">52%</div>
+                        <small class="text-muted text-uppercase font-weight-bold">Bangka</small>
+                        <div class="progress progress-xs mt-1 mb-0">
+                          <div class="progress-bar bg-warning" role="progressbar" style="width: 52%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="card">
+                      <div class="card-block">
+                        <div class="h4 mb-0">52%</div>
+                        <small class="text-muted text-uppercase font-weight-bold">Plumpang</small>
+                        <div class="progress progress-xs mt-1 mb-0">
+                          <div class="progress-bar bg-warning" role="progressbar" style="width: 52%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

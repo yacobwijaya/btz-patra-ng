@@ -29,13 +29,13 @@ export const navigation = [
     icon: 'fa fa-cubes'
   },
   {
-    name: 'Goods Receive',
-    url: '/goods-receive',
+    name: 'Good Receive',
+    url: '/good-receive',
     icon: 'fa fa-cubes'
   },
   {
-    name: 'Goods Issued',
-    url: '/goods-issued',
+    name: 'Goods Issue',
+    url: '/good-issue',
     icon: 'fa fa-cubes'
   },
   {
@@ -50,7 +50,7 @@ export const navigation = [
   },
   {
     name: 'SAP Interfacing',
-    url: 'sap-interfacing',
+    url: '/sap-interfacing',
     icon: 'fa fa-skype'
   }
 ];
